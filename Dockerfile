@@ -1,4 +1,5 @@
-FROM armhf/alpine 
+#FROM armhf/alpine 
+FROM resin/armv7hf-alpine-qemu
 
 MAINTAINER Gounthar Frankfurt <116569+gounthar@users.noreply.github.com>
 
