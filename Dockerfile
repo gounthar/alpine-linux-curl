@@ -1,5 +1,5 @@
 #FROM armhf/alpine 
-FROM project31/aarch64-alpine-qemu
+FROM docker.io/project31/aarch64-alpine-qemu:3.5
 
 MAINTAINER Gounthar Frankfurt <116569+gounthar@users.noreply.github.com>
 RUN [ “cross-build-start” ]
