@@ -1,4 +1,4 @@
-FROM schmich/armv7hf-alpine-qemu:3.5
+FROM schmich/armv7hf-alpine-qemu
 # This FROM worked to build on DockerHub but caused this error on OrangePi Zero Armbian 
 # docker run -it gounthar/alpine-linux-curl /bin/bash
 # standard_init_linux.go:190: exec user process caused "exec format error"
