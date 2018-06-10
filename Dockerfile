@@ -4,7 +4,7 @@ FROM schmich/armv7hf-alpine-qemu:3.5
 # standard_init_linux.go:190: exec user process caused "exec format error"
 #FROM resin/qemux86-alpine:latest
 
-RUN [ “cross-build-start” ]
+RUN ["cross-build-start"]
 MAINTAINER Gounthar Frankfurt <116569+gounthar@users.noreply.github.com>
 
 USER root
@@ -12,4 +12,4 @@ USER root
 RUN apk update && apk upgrade && apk add curl\
   && rm -fr /tmp/*
   
-RUN [ “cross-build-end” ]
+RUN ["cross-build-end"]
