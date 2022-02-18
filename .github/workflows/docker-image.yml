@@ -4,7 +4,12 @@ on:
   push:
     branches: [ armv7 ]
   pull_request:
-    branches: [ armv7 ]
+    branches: [ armv7 ]    on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '30 5,17 * * *'
+
+
     
 env:
   ALPINE_VERSION: 3.15    
