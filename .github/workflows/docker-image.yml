@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ armv7 ]
   pull_request:
-    branches: [ master ]
+    branches: [ armv7 ]
 
 jobs:
 
