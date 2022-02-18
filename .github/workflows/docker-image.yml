@@ -5,6 +5,9 @@ on:
     branches: [ armv7 ]
   pull_request:
     branches: [ armv7 ]
+    
+env:
+  ALPINE_VERSION: 3.15    
 
 jobs:
 
@@ -16,4 +19,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag gounthar/alpine-linux-curl
+        docker build . --file Dockerfile --tag gounthar/alpine-linux-curl:$ALPINE_VERSION
         docker push gounthar/alpine-linux-curl
+        docker push gounthar/alpine-linux-curl:$ALPINE_VERSION
