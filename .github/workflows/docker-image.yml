@@ -14,5 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag gounthar/alpine-linux-curl
-           docker push gounthar/alpine-linux-curl
+      run: |
+        docker build . --file Dockerfile --tag gounthar/alpine-linux-curl
+        docker push gounthar/alpine-linux-curl
